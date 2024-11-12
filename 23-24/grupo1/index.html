@@ -1,0 +1,96 @@
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS.css">
+    <script src="./Javacriptcuestionario.js" defer></script>
+    <link rel="stylesheet" href="cssloader.css">
+    <script src="./javascriptbuscador.js" defer></script>
+    <link rel="stylesheet"  type="text/css" href="./cssbuscador.css">
+    <link rel="stylesheet" href="csscasa.css">
+
+
+</head>
+<body id="indexbody">
+    <div class="loader"¡>
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+        </div>
+    <header>
+        <h1>Aula ateca</h1>
+    <div id="cuadro1">
+            <a href="./index.html"><img alt="Casa" src="./Imagenes/casa.png" id="casa" class="shake-left-right" ></a>
+
+            <ul>
+                 <a href="./Zonamaker.html"> <button class="btn-donate">Zona Maker</button></a> 
+                 <a href="./zonathinking.html"><button class="btn-donate"> Zona Thinking</button></a>
+                <a href="./Zonadesign.html"> <button class="btn-donate"> Zona Design </button> </a>
+                <a href="./materiales.html"><button class="btn-donate">  Materiales</button></a>
+                 <a href="./Impresora 3D.html"><button class="btn-donate"> Impresora 3D </button></a>
+            </ul>
+    
+    
+        <div class="buscador">
+            <img alt="logo lupa" src="./Imagenes/lupa.png" id="lupa">
+            <input type="search" placeholder="Buscador" id="buscador1" onkeypress="pulsar(event)" class="input">
+        </div>
+    </div>
+    </header>
+    <main id="contenido">
+        <h3 >Información general</h3>
+        <p>Este aula está diseñada para el trabajo informático con diferentes zonas para plantear el trabajo o proyecto designado, entre ellas están:</p>
+        <ul>
+            <li>Zona Thinking</li>
+            <li>Zona Maker</li>
+            <li>Zona Design</li>
+        </ul>
+        <p>En este aula contamos con diversos materiales para las realizaciones de los proyectos como portátiles, impresora 3D, pantallas, etc.</p>
+       
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="formulario">
+                <fieldset>
+                    <legend>¿CÓMO RESERVO EL AULA ATECA?</legend>
+                    <label for="correo">Correo electrónico: <input type="email" id="correo"></label>
+                    <label for="fecha">¿Qué día quieres reservar el aula?: <input type="date" id="fecha"></label>
+                    <label for="hora">¿A qué hora?: <input type="time" id="hora"></label>
+                    <div>
+                        <p class="clase_opciones">Deseo recibir novedades sobre el Aula Ateca</p>
+                        <label class="clase_opciones"><input type="radio" name="frecuencia" value="diaria">Una vez al día</label>
+                        <label class="clase_opciones"><input type="radio" name="frecuencia" value="semanal">Una vez a la semana</label>
+                        <label class="clase_opciones"><input type="radio" name="frecuencia" value="mensual">Una vez al mes</label>
+                        <label class="clase_opciones"><input type="radio" name="frecuencia" value="nunca">Nunca</label>
+                        <label class="clase_opciones"><input type="checkbox" name="acuerdo">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+                        <button type="submit" class="boton-reservar">Reservar</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="redes-sociales">
+                <a href="http://iesalonsodemadrigal.centros.educa.jcyl.es/sitio/"><img src="./Imagenes/ies_alonso.png"></a>
+                <a href="https://www.instagram.com/elalonsodemadrigal/?hl=es"><img src="./Imagenes/INSTAGRAM.png"></a>
+                <a href="https://twitter.com/iesalonsodemad1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./Imagenes/twiter.png"></a>
+                <a href="https://m.facebook.com/profile.php?id=1433364220319889"><img src="./Imagenes/Facebook.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

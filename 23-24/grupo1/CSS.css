@@ -1,0 +1,204 @@
+h1 {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    color: #fff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+#cuadro1 ul a:link, #cuadro1 ul a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+#cuadro1 {
+    background-color: #B1C9EF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+#cuadro1 ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#casa {
+    width: 70px;
+    margin: 30px;
+}
+
+#lupa {
+    width: 10%;
+    height: 10%;
+}
+
+#cuadro1 li {
+    list-style: none;
+    border-radius: 20px;
+    background-color: #d5deef;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+}
+
+.buscador {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+body {
+
+    background-image: url("./MicrosoftTeams-image.png");
+
+    margin: 0;
+    padding: 0;
+
+     height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+footer{
+    background-color: #628ECB;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.clase_opciones {
+    margin-bottom: 10px;
+}
+.redes-sociales img {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 10px; 
+}
+.boton-reservar {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.boton-reservar:hover {
+    background-color: #45a049; 
+}
+
+#contenido {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+    margin-top: 100px;
+}
+
+#contenido ul{
+        list-style-type: none;
+}
+#impresoraf{
+    width: 100%;
+}
+#bodyzonadesing{
+    background-image: url("./Imagenes/Zonadesignfoto.png");
+}
+#bodyzonathinking{
+    background-image: url("./Imagenes/thinking.png");
+}
+#bodyimpresora3d{
+    background-image: url("./Imagenes/Impresora.png");
+}
+#indexbody{
+    background-image: url("./Imagenes/MicrosoftTeams-image.png");
+}
+#bodymateriales{
+    background-image: url("./Imagenes/MicrosoftTeams-image.png");
+}
+#bodyzonamaker{
+    background-image: url("./Imagenes/zonMaker.jpg");
+}
+
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
