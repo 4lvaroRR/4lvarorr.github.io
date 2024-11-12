@@ -50,6 +50,22 @@
         <p>© 2024 IES Alonso de Madrigal (Ávila) - TIC 2º de Bachillerato</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var acc = document.getElementsByClassName('accordion');
+            
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
