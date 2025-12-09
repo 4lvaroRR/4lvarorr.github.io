@@ -1,0 +1,47 @@
+header{
+    background-color: blue;
+    height: 300px;
+    color: white;
+    font-style: unset;
+    border-radius: 20px;
+    font-size: 150%;
+}
+
+#titulo{
+    padding-left: 440px;
+    padding-top: 20px;
+}
+
+
+body{
+    background-color: rgb(171, 232, 235);
+
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+    padding-left: 500px;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+img{
+
+    padding-left: 420px;
+}
+
+li{
+    color: rgb(255, 196, 0);
+}
+
+a{
+    color: rgb(255, 196, 0);
+}

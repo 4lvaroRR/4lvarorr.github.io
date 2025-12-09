@@ -1,0 +1,140 @@
+header{
+    background-color: blue;
+    height: 200px;
+    color: white;
+    font-style: unset;
+    padding-left: 500px;
+    padding-top: 50px;
+    border-radius: 20px;
+    font-size: 150%;
+
+
+
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+
+}
+
+#texto{
+
+    text-align: center;
+}
+
+body{
+    background-color: rgb(203, 243, 241);
+}
+
+.bloque_1:hover{
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+    width: 400px;
+    height: 400px;
+    transition-property: background-color;
+    transition-duration: 3s;
+    background-color: rgb(81, 211, 231);
+}
+
+.bloque_2:hover{
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+    width: 400px;
+    height: 400px;
+    transition-property: background-color;
+    transition-duration: 3s;
+    background-color: rgb(81, 211, 231);
+    
+}
+
+.bloque_3:hover{
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
+    width: 400px;
+    height: 400px;
+    transition-property: background-color;
+    transition-duration: 3s;
+    background-color: rgb(81, 211, 231);
+    
+}
+
+#Objetivo_1{
+    width: 30%;
+}
+
+#Objetivo_1 img{
+    width: 300px;
+    height: 300px;
+}
+
+#Objetivo_2{
+    width: 30%;
+}
+
+#Objetivo_2 img{
+    width: 300px;
+    height: 300px;
+}
+
+#Objetivo_3{
+    width: 30%;
+}
+
+#Objetivo_3 img{
+    width: 400px;
+    height: 250px;
+}
+
+a{
+    color: rgb(218, 172, 24);
+}
+
+article h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 166, 0);
+    
+}
+ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+li{ 
+    list-style: none;
+    margin: 20px;
+}
+li a{
+    width: 250px;
+    height: 200px;
+    font-size: 30px;
+}
+li img{
+    width: 280px;
+    height: 200px;
+}
+
+section{
+    text-align: center;
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+    padding-left: 500px;
+    padding-top: 50px;
+    border-radius: 20px;
+    font-size: 180%;
+}
