@@ -1,145 +1,189 @@
 
 /* Base */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
+
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 h1 { text-align: center; margin-bottom: 30px; }
 h2 { margin-top: 0; }
 .subtle { margin-top: 0; color: #555; }
+
 .panel { margin-bottom: 25px; }
+
 select, textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
-textarea { height: 150px; resize: vertical; }
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
 
 .actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
+
 button {
-  padding: 12px 16px;
-  font-size: 16px;
-  background: #0078ff;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
+    flex: 1 1 auto;
+    padding: 12px 16px;
+    font-size: 16px;
+    background: #0078ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    min-width: 140px;
 }
+
 button:disabled { background: #9bbce4; cursor: not-allowed; }
 button:hover:not(:disabled) { background: #005fcc; }
 
-/* Tablero 5×4 de palabras */
+/* === Tablero (SIEMPRE 5 columnas) === */
+
 .grid-5x4 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 86px;
-  gap: 12px;
-}
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #eef5ff;
-  border: 1px solid #cfe0ff;
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-weight: 600;
-  user-select: none;
-  transition: transform .06s ease;
-}
-.card:active { transform: scale(0.98); }
-@media (max-width: 600px) {
-  .grid-5x4 { grid-auto-rows: 64px; }
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
 }
 
-/* ====== Modo Maestro (overlay + modal) ====== */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.35);
-  display: none; /* se mostrará vía JS */
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  z-index: 999;
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #eef5ff;
+    border: 1px solid #cfe0ff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-weight: 600;
+    user-select: none;
+    transition: transform .06s ease;
 }
+
+.card:active { transform: scale(0.98); }
+
+/* === Responsividad real sin cambiar columnas === */
+
+@media (max-width: 700px) {
+    .card {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 4px;
+        font-size: 12px;
+    }
+}
+
+/* === Modo Maestro: SIEMPRE 5 columnas === */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
+
 .overlay.activo { display: flex; }
 
 .modal {
-  width: min(680px, 95vw);
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  padding: 18px 18px 22px;
-  position: relative;
+    width: min(680px, 100%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    padding: 18px 18px 22px;
+    position: relative;
 }
+
 .modal-close {
-  position: absolute;
-  right: 10px; top: 10px;
-  border: none;
-  background: transparent;
-  font-size: 20px;
-  cursor: pointer;
-  line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
 }
 
 .maestro-grid {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-}
-.celda-maestro {
-  height: 70px;
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  color: #111;
-  font-weight: 600;
-  user-select: none;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
-/* Colores patrón maestro */
-.celda-roja  { background: #ffb3b3; }
-.celda-azul  { background: #b3c7ff; }
-.celda-gris  { background: #e8e3d7; color:#333; }
+.celda-maestro {
+    height: 70px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #111;
+    font-weight: 600;
+    user-select: none;
+}
+
+/* Colores */
+.celda-roja { background: #ffb3b3; }
+.celda-azul { background: #b3c7ff; }
+.celda-gris { background: #e8e3d7; color:#333; }
 .celda-negra { background: #000; color: #fff; }
 .celda-negra .bomba { width: 34px; height: 34px; display: block; }
 
 /* Leyenda */
 .leyenda {
-  margin-top: 14px;
-  color: #555;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
+    margin-top: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
+
 .dot {
-  display: inline-block;
-  width: 12px; height: 12px;
-  border-radius: 999px;
-  margin-right: 6px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    margin-right: 6px;
 }
-.dot.rojo  { background: #ffb3b3; }
-.dot.azul  { background: #b3c7ff; }
-.dot.gris  { background: #e8e3d7; border: 1px solid #cfc8b9; }
+
+.dot.rojo { background: #ffb3b3; }
+.dot.azul { background: #b3c7ff; }
+.dot.gris { background: #e8e3d7; border: 1px solid #cfc8b9; }
 .dot.negro { background: #000; }
+
+/* Responsividad del modal sin cambiar columnas */
+@media (max-width: 500px) {
+    .celda-maestro {
+        height: 55px;
+        font-size: 12px;
+    }
+}
