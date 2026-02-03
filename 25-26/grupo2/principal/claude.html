@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/claude.css">
     <link rel="shortcut icon" href="../img/HorizonAI.ico" type="image/x-icon">
+    <script src="../js/script.js" defer></script>
     <title>Claude - HorizonAI</title>
 </head>
 <body>
@@ -15,31 +16,31 @@
             <div class="cabecera">
                 <a href="./index.html">
                     <img src="../img/HorizonAI.ico" alt="" class="navegador">
-                    <h1>HorizonAI</h1>
+                    <h1 id="boton-inicio">HorizonAI</h1>
                 </a>
             </div>
             
             <nav class="navegacion">
                 <ul>
-                    <li>
+                    <li class="contenedor">
                         <a href="./chatgpt.html">
-                            <img src="../img/ChatGPT2.svg" alt="" class="navegador">
+                            <img class="chatgpt" src="../img/ChatGPT2.svg" alt="" class="navegador">
                             <span>ChatGPT</span>
                         </a>
                     </li>
-                    <li class="activa">
+                    <li class="contenedor activa">
                         <a href="./claude.html">
                             <img src="../img/Claude.svg" alt="" class="navegador">
                             <span>Claude</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="contenedor">
                         <a href="./gemini.html">
                             <img src="../img/Gemini.svg" alt="" class="navegador">
                             <span>Gemini</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="contenedor">
                         <a href="./copilot.html">
                             <img src="../img/Copilot.svg" alt="" class="navegador">
                             <span>Copilot</span>
@@ -47,6 +48,12 @@
                     </li>
                 </ul>
             </nav>
+            <footer>
+                <button id="modo-claro">☀️ Modo Claro</button>
+                <button id="modo-oscuro">🌙 Modo Oscuro</button>
+                <button id="barra-desplegable"><img src="../img/desplegar1.png" alt=""></button>
+                <button id="barra-ocultada"><img src="../img/desplegar2.png" alt=""></button>
+            </footer>
         </aside>
     </header>
     
