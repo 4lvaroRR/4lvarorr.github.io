@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Código Secreto – Generador</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Generador de Juego</h1>
+
+    <!-- Tipo de generación -->
+    <section class="panel">
+      <h2>Tipo de generación</h2>
+      <label>
+        <input type="radio" name="modo" value="tema" id="modoTema">
+        Usar un tema preestablecido
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="modo" value="manual" id="modoManual">
+        Usar palabras introducidas manualmente
+      </label>
+    </section>
+
+    <!-- Selección de tema -->
+    <section class="panel" id="panelTemas" style="display:none;">
+      <h2>Selecciona un tema</h2>
+      <select id="temaSelect">
+        <option value="">-- Selecciona un tema --</option>
+        <option value="historia">Historia</option>
+        <option value="deportes">Deportes</option>
+        <option value="cine">Cine y TV</option>
+        <option value="cultura">Cultura</option>
+        <option value="gaming">Gaming</option>
+      </select>
+    </section>
+
+    <!-- Entrada manual -->
+    <section class="panel" id="panelManual" style="display:none;">
+      <h2>Introduce tus propias palabras</h2>
+      <textarea id="manualInput" placeholder="Escribe o pega aquí al menos 20 palabras, separadas por comas, punto y coma o saltos de línea"></textarea>
+    </section>
+
+    <!-- Acciones -->
+    <div class="actions">
+      <button id="btnGenerar" disabled>Generar tablero (5×4)</button>
+      <button id="btnBarajar" disabled>Barajar palabras</button>
+      <button id="btnLimpiar">Limpiar</button>
+    </div>
+
+    <!-- Tablero de palabras (5×4) -->
+    <section id="tableroSection" class="panel" style="display:none;">
+      <h2>Tablero (5 × 4)</h2>
+      <div id="gridPalabras" class="grid-5x4" aria-live="polite"></div>
+    </section>
+
+    <hr style="margin:28px 0 18px;">
+
+    <!-- MODO MAESTRO -->
+    <section class="panel">
+      <h2>Modo maestro</h2>
+      <p class="subtle">Muestra un patrón 4×5 con <strong>8 rojas</strong>, <strong>7 azules</strong>, <strong>1 negra (bomba)</strong> y <strong>4 grises</strong>.</p>
+      <div class="actions">
+        <button id="btnModoMaestro">Abrir patrón maestro (4×5)</button>
+        <button id="btnRegenerarMaestro">Regenerar patrón</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Overlay + Modal del Modo Maestro -->
+  <div class="overlay" id="overlayMaestro" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloMaestro">
+      <button class="modal-close" id="cerrarMaestro" aria-label="Cerrar">✕</button>
+      <h3 id="tituloMaestro" style="margin-top:0;">Patrón maestro (4 × 5)</h3>
+      <div class="maestro-grid" id="maestroGrid" aria-live="polite"></div>
+      <div class="leyenda">
+        <span class="dot rojo"></span> Rojo (8)
+        <span class="dot azul"></span> Azul (7)
+        <span class="dot gris"></span> Neutral (4)
+        <span class="dot negro"></span> Asesino (1)
+      </div>
+    </div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>

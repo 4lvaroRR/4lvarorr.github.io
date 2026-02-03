@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AUTOMARKET</title>
+  <link rel="stylesheet" href="./AUTOMARKET.css">
+</head>
+<body>
+  <header>
+    <a href="./AUTOMARKET.html"><img src="./logo.png" alt="Logotipo"></a>
+    <ul>
+      <li><a href="./Página Motos.html">Motos</a></li>
+      <li><a href="./Trabajo/coches.html">Coches</a></li>
+      <li><a href="./Tractores.html">Tractores</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <aside>
+      <div id="marca">
+        <h1>Elige tu coche</h1>
+        <div>
+          <h2>Marca</h2>
+          <ul>
+            <li><a href="#">John Deere</a></li>
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">Case IH</a></li>
+            <li><a href="#">Audi</a></li>
+            <li><a href="#">Challenger</a></li>
+            <li><a href="#">Yamaha</a></li>
+            <li><a href="#">Honda</a></li>
+            <li><a href="#">Volkswagen</a></li>
+            <li><a href="#">Mercedes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Precio</h2>
+          <input type="range" maxlength="600000" minlength="1000000">
+        </div>
+        <div>
+          <h2>Combustible</h2>
+          <ul>
+            <li><a href="#">Gasolina</a></li>
+            <li><a href="#">Gasoil</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div id="content">
+      <section class="content-section">
+        <h1>Tractores</h1>
+      <article class="titulo-precio">
+        <img src="./Case IH Steiger 580.jpg" alt="Foto Case IH Steiger 580">
+        <a href="./Case IH Steiger 580.html">Case IH Steiger 580</a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./John Deere 9R Series.jpg" alt="Foto John Deere 9R Series">
+        <a href="./John Deere 9R Series.html">John Deere 9R Series</a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./Challenger MT875B.jpg" alt="Foto Challenger MT875B">
+        <a href="./Challenger MT875B.html">Challenger MT875B</a>
+      </article>
+    </section>
+
+      <section class="content-section">
+        <h1>Motos</h1>
+      <article class="titulo-precio">
+        <img src="./bmw1.png" alt="Foto BMW R 1250 GS">
+        <a href="./Moto 1.html">BMW R 1250 GS </a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./yamaha1.png" alt="Foto Yamaha MT-07">
+        <a href="Moto 3.html">Yamaha MT-07 </a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./honda1.png" alt="Foto Honda CB 500 X">
+        <a href="Moto 5.html">Honda CB 500 X </a>
+      </article>
+    </section>
+
+      <section class="content-section">
+        <h1>Coches</h1>
+      <article class="titulo-precio">
+        <img src="./audi 1.png" alt="Foto Audi A3">
+        <a href="#"> Audi A3 </a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./golf.png" alt="Foto Wolkswagen Golf GTI ">
+        <a href="#"> Volksagen Golf GTI </a>
+      </article>
+
+      <article class="titulo-precio">
+        <img src="./mercedes_converted.png" alt="Foto Mercedes Clase C">
+        <a href="#"> Mercedes Clase C </a>
+      </article>
+      </section>
+    </div>
+
+    <aside>
+      <div class="contenido-inner">
+        <h2>Próximamente</h2>
+        <p>Próximamente comenzaremos a dar más dinamismo a las páginas utilizando el lenguaje Javascript.</p>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <form action="">
+      <div>
+        <fieldset id="formulario">
+          <legend>¿PODRÍAS ENVIARNOS UNA SUGERENCIA?</legend>
+          <p><label class="clase_texto">Nombre de usuario: <input required type="text"></label></p>
+          <p><label>Correo eléctronico: <input required type="text"></label></p>
+          <p><label class="clase_texto">Sugerencia: <input style="width: 100%; height: 100px;" required type="text"></label></p>
+          <p><label class="clase_opciones">Deseo recibir nueva información de AUTOMARKET</label></p>
+          <p>
+            <input type="radio" name="select"><label for="">Una vez al día</label>
+            <input type="radio" name="select"><label for="">Una vez a la semana</label>
+            <input type="radio" name="select"><label for="">Una vez al mes</label>
+          </p>
+          <p>
+            <input type="checkbox" name="for" required id=""><label class="clase_opciones">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies.</label>
+          </p>
+        </fieldset>
+        <p>
+          <input type="submit" value="Enviar sugerencia" id="id_boton_crear_cuenta">
+        </p>
+      </div>
+    </form>
+  </footer>
+</body>
+</html>

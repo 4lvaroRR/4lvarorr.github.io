@@ -1,0 +1,61 @@
+header img{
+    width:200px;}
+
+ul{
+    list-style: none;}
+
+header, ul{
+    display: flex;
+    flex-direction: row;
+    background-color:chartreuse;
+    margin-bottom: 20px;}
+
+li{
+    font-size:25px ;
+    margin: 70px;}
+
+li a{
+    text-decoration: none;
+    color: black;
+    border: 3px solid #0047AB;
+    padding:10px ;}
+
+main img{width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 40px;}
+
+h3{
+    padding-left: 30px;
+    font-size: 25px;}
+
+hr{margin-top: 20px;}
+
+
+footer{background-color: chartreuse;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;}
+
+header a:hover{opacity: 0.5;
+    color: white;}
+
+#img-precio{
+    display:flex;
+    flex-direction: row;}
+
+main a{
+    margin: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    border: 6px double #0047AB;
+    color:red;}
+
+main a:hover{opacity: 0.5;
+    color: rgb(36, 0, 36);}
+
+#precio-cont{
+    display: flex;
+    flex-direction: column;}
