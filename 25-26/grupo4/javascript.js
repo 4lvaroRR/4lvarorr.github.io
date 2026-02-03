@@ -1,4 +1,4 @@
-const boton = document.querySelector(".btn");
+const botonSubir = document.querySelector(".btn");
 
 function subir (){
     window.scrollTo({
@@ -7,7 +7,36 @@ function subir (){
     });
 }
 
-boton.addEventListener("click", subir)
+botonSubir.addEventListener("click", subir)
+var botonIluminacion = document.querySelector(".btnIluminacion")
+var estilo = "oscuro"
+function cambiarTema(){
+    var link = document.querySelector(".style")
+    if(estilo === "oscuro"){
+        link.href = "./css/estilo claro.css"
+        estilo = "claro"
+    }
+    else{
+        link.href = "./css/estilo.css"
+        estilo = "oscuro"
+    }
+}
+
+botonIluminacion.addEventListener("click", () => cambiarTema())
+var botonIluminacion = document.querySelector(".btnIluminacion")
+function cambiarTemaSub(){
+    var link = document.querySelector(".styleSub")
+    if(estilo === "oscuro"){
+        link.href = "../css/estilo claro.css"
+        estilo = "claro"
+    }
+    else{
+        link.href = "../css/estilo.css"
+        estilo = "oscuro"
+    }
+}
+
+botonIluminacion.addEventListener("click", () => cambiarTemaSub())
 
 let colorOriginal;
 

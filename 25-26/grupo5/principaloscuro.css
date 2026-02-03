@@ -1,123 +1,108 @@
 header{
-    background-color: blue;
+    background-color: darkblue;
     height: 200px;
-    color: white;
+    color: gray;
     font-style: unset;
     padding-left: 500px;
     padding-top: 50px;
     border-radius: 20px;
     font-size: 150%;
-
-
 }
 
 main{
-    display: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: stretch;
-    text-align: center;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+ 
 }
-
-article{
-    display: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: stretch;
-    text-align: center;
-}
-
+ 
 #texto{
-
+ 
     text-align: center;
 }
-
+ 
 body{
-    background-color: rgb(203, 243, 241);
+    background-color: gray;
 }
-
+ 
 .bloque_1:hover{
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
     width: 400px;
     height: 400px;
     transition-property: background-color;
     transition-duration: 3s;
-    background-color: rgb(81, 211, 231);
+    background-color: rgb(42, 112, 122);
 }
-
+ 
 .bloque_2:hover{
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
     width: 400px;
     height: 400px;
     transition-property: background-color;
     transition-duration: 3s;
-    background-color: rgb(81, 211, 231);
-    
+    background-color: rgb(42, 112, 122);
+   
 }
-
+ 
 .bloque_3:hover{
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
     width: 400px;
     height: 400px;
     transition-property: background-color;
     transition-duration: 3s;
-    background-color: rgb(81, 211, 231);
-    
+    background-color: rgb(42, 112, 122);
+   
 }
-
+ 
 #Objetivo_1{
     width: 30%;
 }
-
+ 
 #Objetivo_1 img{
     width: 300px;
     height: 300px;
 }
-
+ 
 #Objetivo_2{
     width: 30%;
 }
-
+ 
 #Objetivo_2 img{
     width: 300px;
     height: 300px;
 }
-
+ 
 #Objetivo_3{
     width: 30%;
 }
-
+ 
 #Objetivo_3 img{
     width: 400px;
     height: 250px;
 }
-
+ 
 a{
-    color: rgb(218, 172, 24);
+    color: rgb(92, 73, 12);
 }
-
+ 
 article h2{
     text-align: center;
     font-size: 40px;
-    color: rgb(255, 166, 0);
-    
+    color: rgb(109, 63, 2);
+   
 }
 ul{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
-li{ 
+li{
     list-style: none;
     margin: 20px;
 }
@@ -130,21 +115,21 @@ li img{
     width: 280px;
     height: 200px;
 }
-
+ 
 section{
     text-align: center;
 }
-
+ 
 footer{
-    background-color: blue;
-    color: white;
+    background-color: darkblue;
+    color: gray;
     height: 200px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: baseline;
-	align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
     padding-left: 500px;
     padding-top: 50px;
     border-radius: 20px;

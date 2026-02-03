@@ -1,0 +1,47 @@
+header{
+    background-color: rgb(2, 2, 94);
+    height: 300px;
+    color: rgb(90, 90, 90);
+    font-style: unset;
+    border-radius: 20px;
+    font-size: 150%;
+}
+ 
+#titulo{
+    padding-left: 440px;
+    padding-top: 20px;
+}
+ 
+ 
+body{
+    background-color: rgb(70, 94, 95);
+ 
+}
+ 
+footer{
+    background-color: rgb(3, 3, 99);
+    color: rgb(92, 91, 91);
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+    padding-left: 500px;
+    border-radius: 20px;
+    font-size: 40px;
+}
+ 
+img{
+ 
+    padding-left: 200px;
+}
+ 
+li{
+    color: rgb(116, 89, 2);
+}
+ 
+a{
+    color: rgb(116, 89, 2);
+}
